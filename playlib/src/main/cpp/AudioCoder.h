@@ -19,7 +19,7 @@ extern "C" {
 };
 
 /**
- * 音频编解码层
+ * 音频编解码层,用ffmpeg编解码
  */
 class AudioCoder {
 private:
