@@ -42,7 +42,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         initAudioPlay();
-        mVolumeBar = (SeekBar) findViewById(R.id.seek_volume);
+        mVolumeBar = findViewById(R.id.seek_volume);
         mVolumeBar.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
             @Override
             public void onProgressChanged(SeekBar seekBar, int progress, boolean fromUser) {
@@ -60,9 +60,9 @@ public class MainActivity extends AppCompatActivity {
 
             }
         });
-        mClockBar = (ProgressBar) findViewById(R.id.progress_time);
+        mClockBar = findViewById(R.id.progress_time);
         mVolumeBar.setProgress(mVolume);
-        mTimeBar = (SeekBar) findViewById(R.id.seek_time);
+        mTimeBar = findViewById(R.id.seek_time);
         mTimeBar.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
             @Override
             public void onProgressChanged(SeekBar seekBar, int progress, boolean fromUser) {
