@@ -1,0 +1,23 @@
+
+ext {
+    android = [
+            compileSdkVersion      : 26,
+            buildToolsVersion      : "26.0.0",
+            applicationId          : "com.zizi.qmusic",
+            minSdkVersion          : 14,
+            targetSdkVersion       : 26,
+            versionCode            : 1,
+            versionName            : "1.0",
+            supportVersion         : "27.1.1",
+            constraintVersion      : "1.1.3"
+    ]
+
+    third = [
+
+    ]
+
+    dependencies = [
+            "constraint"            : "com.android.support.constraint:constraint-layout:${android.constraintVersion}",
+            "appcompat-v7"          : "com.android.support:appcompat-v7:${android.supportVersion}",
+    ]
+}
